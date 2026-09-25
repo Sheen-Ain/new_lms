@@ -1,0 +1,31 @@
+Section 1: Arithmetic Operators (Questions 1-10)
+1.	a = 15, b = 4 print(a + b, a - b, a * b, a / b, a // b, a % b, a ** b) Is code ka output kya hoga?
+2.	print(17 // 3) aur print(17 / 3) mein kya farq hai? Example se samjhao.
+3.	5 ** 3 ka result kya hai? Aur 2 ** 4?
+4.	Koi number 10 ka remainder nikaalo jab usko 3 se divide karo (% use karke).
+5.	Ek code likho jo do numbers ka area of rectangle calculate kare (length * width).
+6.	print(10 + 5 * 2) ka output kya hoga? Aur agar parentheses laga do (10 + 5) * 2 to kya hoga?
+7.	9 % 2, 10 % 2, 11 % 2 ka output likho. Pattern kya hai?
+8.	100 // 7 aur 100 % 7 dono print karo.
+9.	Ek program banao jo user se base aur exponent le aur base ** exponent print kare.
+10.	(-5) ** 2 aur -5 ** 2 mein difference kya hai? Output batao.
+Section 2: Assignment Operators (Questions 11-20)
+11.	x = 10 x += 5 x -= 3 x *= 2 print(x) Final value kya hogi?
+12.	a = 20 a //= 3 a %= 4 print(a) Output?
+13.	Compound assignment se y = y * 3 ko short form mein likho.
+14.	score = 50 score += 10 score *= 2 score -= 15 Final score print karo.
+15.	Ek variable num = 7 lo aur usko 5 se multiply karke phir 2 se divide karo using assignment operators.
+16.	z = 100 z **= 2 z //= 10 Kya output aayega?
+17.	p = 5 p += p (ye kya karega?)
+18.	User se ek number lo, usme 10 add karo using +=, phir print karo.
+19.	a = 10; b = 3 a *= b a += 5 Final a kya hoga?
+20.	Multiple assignment: x, y, z = 5, 10, 15 Phir x += y aur z *= 2 karo, final values print karo.
+Section 3: Comparison Operators (Questions 21-30)
+21.	10 == 10, 10 != 5, 7 > 3, 4 < 8, 5 >= 5, 6 <= 10 — sab True/False batao.
+22.	a = 15; b = 20 print(a > b) print(a <= b) Output?
+23.	Ek code likho jo check kare ki user ka entered age 18 se bara ya barabar hai ya nahi.
+24.	print(5 == "5") ka result kya hoga? Kyun?
+25.	x = 10; y = 10.0 print(x == y) aur print(x is y) (extra knowledge ke liye).
+26.	Do numbers user se lo aur check karo pehla number dusre se chhota hai ya nahi.
+27.	result = (10 + 5) > (3 * 4) result ka value True ya False?
+28.	a = 7; b = 7 print(a == b and a >= b) (logical bhi thoda mix)

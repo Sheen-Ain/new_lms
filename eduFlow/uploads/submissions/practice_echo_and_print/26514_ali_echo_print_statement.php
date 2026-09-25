@@ -1,0 +1,38 @@
+<?php
+echo "<html>";
+echo "<head>";
+print "<title>Ali Hyder</title>";
+echo "</head>";
+echo "<body style='margin: 50px;'>";
+echo "<div style='width: 600px; margin: auto; border: 2px solid black; padding: 20px;'>";
+echo "<h1 style='text-align: center; color: blue;'>BIO DATA</h1>";
+echo "<hr>";
+print "<h2>Personal Information</h2>";
+echo "<p><b>Full Name:</b> Ali Hyder</p>";
+echo "<p><b>Father's Name:</b> Bhai Khan</p>";
+echo "<p><b>Date of Birth:</b> 20 Feb 2000</p>";
+echo "<p><b>Age:</b> 25 Years</p>";
+echo "<p><b>Gender:</b> Male</p>";
+echo "<p><b>Nationality:</b> Pakistani</p>";
+echo "<p><b>Religion:</b> Islam</p>";
+echo "<p><b>Marital Status:</b> Single</p>";
+echo "<hr>";
+print "<h2>Contact Information</h2>";
+echo "<p><b>Email:</b> alihyder.it02@gmail.com</p>";
+echo "<p><b>Phone:</b> 03058350199</p>";
+echo "<p><b>Address:</b> Naushahro Feroze</p>";
+echo "<hr>";
+print "<h2>Educational Qualification</h2>";
+echo "<p><b>Information Technology:</b> SBBU-SBA (2025)</p>";
+echo "<p><b>Intermediate:</b> Govt.Boys School Kandiaro (2017)</p>";
+echo "<p><b>Matriculation:</b> Govt. Boys School Machur (2015)</p>";
+echo "<hr>";
+print "<h2>Skills</h2>";
+echo "<p>PHP, HTML, CSS, JavaScript, MySQL</p>";
+echo "<hr>";
+print "<h2>Languages</h2>";
+echo "<p>English, Urdu, Sindhi</p>";
+echo "</div>";
+echo "</body>";
+echo "</html>";
+?>

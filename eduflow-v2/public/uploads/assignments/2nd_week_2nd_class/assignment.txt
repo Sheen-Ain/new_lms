@@ -1,0 +1,46 @@
+Qno:01
+a = True
+ b = False 
+print(a and b) 
+print(a or b) 
+print(not a) 
+Is code ka output kya hoga?
+Qno2: Ek program likho jo user se ek number le aur check kare ki woh positive, negative ya zero hai (simple if-elif-else use karke).
+Qno3: fruits = ["apple", "banana", "mango"] Check karo ki "grapes" list mein hai ya nahi using in operator. Output batao.
+Qn4: User se age input lo. Agar age 18 ya usse zyada hai to "You can vote" print karo, warna "You cannot vote".
+Qno5: Do variables x = 10 aur y = 20 lo. Check karo x > 5 and y < 30 — result True ya False?
+Qno6: Ek program banao jo user se ek character le aur check kare ki woh vowel (a, e, i, o, u) hai ya nahi (membership operator in use karke).
+
+Qno7: •  User se ek number input lo.
+•	Agar number even hai aur 50 se bada hai to "Big Even Number" print karo.
+•	Agar even hai lekin 50 se chhota hai to "Small Even Number".
+•	Agar odd hai aur 50 se bada hai to "Big Odd Number".
+•	Warna "Small Odd Number". (Logical operators and, or use karo)
+Qno8: Ek nested if likho: User se marks input lo (0-100).
+•	Agar marks > 90 → "Grade A"
+o	Agar marks > 95 → extra "Outstanding!" print karo (nested if)
+•	Agar marks > 80 → "Grade B"
+•	Agar marks > 60 → "Grade C"
+•	Warna "Fail"
+Qno9: students = ["Ali", "Sara", "Ahmed", "Zainab", "Bilal"] User se ek naam input lo. Agar naam list mein hai aur naam ki length 5 se zyada hai to "Valid Senior Student" print karo. Warna "Not Valid" (Logical + Membership dono use karo)
+Qno10: User se temperature input lo (Celsius).
+•	Agar temperature > 35 → "Very Hot"
+•	Agar 25 se 35 ke beech → "Hot"
+•	Agar 15 se 25 ke beech → "Pleasant"
+•	Agar 5 se 15 ke beech → "Cold"
+•	Agar < 5 → "Very Cold" (if-elif ladder banao, logical operators use kar sakte ho)
+Qno11: Ek program likho jo user se username aur password le.
+•	Agar username == "admin" aur password == "12345" to "Login Successful"
+•	Agar username sahi hai lekin password galat to "Wrong Password"
+•	Agar username galat hai to "Invalid Username" (Nested if use karo)
+Qno12: User se teen numbers a, b, c input lo. Nested if use karke sabse bada number find karo aur print karo. (Hint: pehle a aur b compare, phir usko c se compare)
+
+Qno13: •  Ek grading system banao with nested if: User se percentage lo.
+•	Agar percentage >= 90:
+o	Agar percentage == 100: "Perfect Score - A+"
+o	Warna "A Grade"
+•	Agar percentage >= 80: "B Grade"
+•	Agar percentage >= 70: "C Grade"
+•	Warna "Below Average"
+
+

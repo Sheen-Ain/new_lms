@@ -1,0 +1,106 @@
+Section 1: Basics and Variables (1 to 8)
+
+1. Ek variable name mein apna naam store karo aur print se display karo. Phir uski length bhi print karo.
+
+2. Do variables a = 25 aur b = 3.5 banao. Unka sum, product aur difference print karo. Data types bhi comment mein likho.
+
+3. User se apna naam aur age input lo. Phir print karo: Hello [naam], aapki umar [age] saal hai.
+
+4. Ek integer variable num = 100 lo. Ise string mein convert karke print karo aur type bhi check karo.
+
+5. User se do numbers input lo (float), unka average calculate karke print karo.
+
+6. Multiple assignment use karke teen variables x, y, z ko ek line mein 10, 20, 30 assign karo aur sab print karo.
+
+7. Ek string sentence = "Python is fun" banao. Isme "fun" word hai ya nahi check karo using in operator.
+
+8. User se ek number input lo (string mein aayega). Ise integer mein convert karke uska square print karo.
+
+Section 2: Operators (9 to 15)
+
+9. a = 15, b = 4
+   Sab arithmetic operators (+, -, *, /, //, %, **) use karke results print karo.
+
+10. score = 50
+    Assignment operators use karke:
+    score += 10
+    score *= 2
+    score -= 15
+    Har step ke baad print karo. Final value kya hai?
+
+11. x = 10, y = 20
+    Sab comparison operators (==, !=, >, <, >=, <=) use karke True/False print karo.
+
+12. a = True, b = False
+    Logical operators (and, or, not) ke saath sab combinations print karo.
+
+13. fruits = ["apple", "banana", "mango", "orange"]
+    User se ek fruit naam input lo. Check karo ki woh list mein hai ya nahi (in aur not in dono use karke).
+
+14. num = 7
+    Compound assignment operators se:
+    num **= 2
+    num //= 3
+    num %= 5
+    Final value print karo.
+
+15. 10 + 5 * 3 - 8 / 2 ** 2 ka output kya hoga? Pehle manually calculate karo, phir code mein run karke verify karo.
+
+Section 3: If-Elif-Else and Nested If (16 to 30)
+
+16. User se ek number input lo. Agar woh even hai to "Even Number" print karo, warna "Odd Number".
+
+17. User se age input lo. Agar age >= 18 hai to "You are eligible to vote" print karo, warna "You are not eligible".
+
+18. User se temperature (Celsius) input lo.
+    Agar > 35 → Very Hot
+    25 se 35 tak → Hot
+    15 se 25 tak → Pleasant
+    < 15 → Cold
+
+19. User se ek character input lo. Check karo ki woh vowel (a,e,i,o,u) hai ya consonant. Upper aur lower dono handle karo.
+
+20. Do numbers user se lo. Bada number konsa hai woh print karo (if-else use karke).
+
+21. User se marks input lo (0-100).
+    >= 90 → A
+    >= 80 → B
+    >= 70 → C
+    >= 60 → D
+    < 60 → Fail
+
+22. User se ek number input lo. Agar woh positive hai aur even bhi hai to "Positive Even" print karo (and use karke).
+
+23. User se teen numbers a, b, c input lo. Sabse chhota number find karke print karo.
+
+24. User se ek number lo.
+    Agar divisible by 3 aur 5 dono hai → Divisible by 15
+    Sirf 3 se → Divisible by 3
+    Sirf 5 se → Divisible by 5
+    Warna Not divisible by 3 or 5
+
+25. User se age input lo.
+    Agar age >= 18:
+        Agar age >= 60 → Senior Citizen
+        Warna Adult
+    Warna Minor
+
+26. User se username aur password input lo.
+    Agar username == "student" aur password == "pass123" → Login Successful
+    Agar username sahi lekin password galat → Wrong Password
+    Warna Invalid Username
+
+27. User se ek string input lo.
+    Agar string ki length > 10 aur usme "python" word hai to Valid Long Python String
+    Agar length > 10 lekin python nahi hai to Long String
+    Warna Short String
+
+28. User se teen numbers lo. Nested if use karke sabse bada number find karo aur print karo.
+
+29. User se percentage input lo.
+    Agar >= 90:
+        Agar 100 hai to Perfect A+
+        Warna A Grade
+    >= 80 → B Grade
+    >= 70 → C Grade
+    Warna Needs Improvement

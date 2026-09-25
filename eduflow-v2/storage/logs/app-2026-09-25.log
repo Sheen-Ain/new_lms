@@ -1,0 +1,8 @@
+[2026-09-25 12:45:27] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 12:45:27] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 12:51:07] ERROR: Controller not found: App\Controllers\EntryTestController | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 12:51:07] ERROR: Controller not found: App\Controllers\EntryTestController | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 12:58:42] ERROR: Controller not found: App\Controllers\EntryTestController | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 12:58:42] ERROR: Controller not found: App\Controllers\EntryTestController | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 13:06:35] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 13:06:35] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-

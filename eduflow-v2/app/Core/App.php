@@ -18,11 +18,15 @@ class App
 
         self::registerAutoloader();
         self::registerErrorHandling();
+
+        require_once APP_PATH . '/Models/Entities.php';
+
         Session::start();
 
         View::share('currentUser', Auth::user());
         View::share('activeRole', Auth::role());
     }
+
 
     public static function run()
     {

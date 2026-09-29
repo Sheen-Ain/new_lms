@@ -146,7 +146,7 @@ class Router
         }
 
         list($controllerName, $action) = explode('@', $handler, 2);
-        $class = strpos($controllerName, '\\') !== false
+        $class = strpos($controllerName, 'App\\') === 0
             ? $controllerName
             : 'App\\Controllers\\' . $controllerName;
 

@@ -6,3 +6,12 @@
 [2026-09-25 12:58:42] ERROR: Controller not found: App\Controllers\EntryTestController | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
 [2026-09-25 13:06:35] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
 [2026-09-25 13:06:35] ERROR: Controller not found: App\Controllers\EntryTestController | ip=::1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fentry-test | uid=-
+[2026-09-25 15:32:26] ERROR: SQL prepare failed: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'current_role, created_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 'inactiv...' at line 2 | INSERT INTO users (full_name, email, password, cnic, user_id_number, gender, phone,
+                                status, is_verified, current_role, created_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 'inactive', 0, 'student', NOW()) | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fregister | uid=-
+[2026-09-25 15:32:26] EXCEPTION: Database error while preparing statement. @ C:\xampp\htdocs\edu_flow\eduflow-v2\app\Core\Database.php:65 | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fregister | uid=-
+[2026-09-25 15:49:38] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-25 15:49:38] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-25 15:49:51] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-25 15:49:51] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2

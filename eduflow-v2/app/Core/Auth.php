@@ -57,7 +57,7 @@ class Auth
         // current_role may be stale after a role change; keep it truthful.
         if (!in_array($user['current_role'], $user['roles'], true)) {
             $user['current_role'] = $user['roles'] ? $user['roles'][0] : 'student';
-            Database::write('UPDATE users SET current_role = ? WHERE id = ?', [$user['current_role'], $id]);
+            Database::write('UPDATE users SET `current_role` = ? WHERE id = ?', [$user['current_role'], $id]);
         }
         $_SESSION['role'] = $user['current_role'];
 
@@ -191,7 +191,7 @@ class Auth
         if (!$user || !in_array($role, $user['roles'], true)) {
             return false;
         }
-        Database::write('UPDATE users SET current_role = ? WHERE id = ?', [$role, $user['id']]);
+        Database::write('UPDATE users SET `current_role` = ? WHERE id = ?', [$role, $user['id']]);
         $_SESSION['role'] = $role;
         self::$loaded = false;
         self::$user = null;

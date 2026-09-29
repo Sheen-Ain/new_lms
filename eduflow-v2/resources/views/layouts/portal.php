@@ -30,6 +30,7 @@ $path = Request::path();
 <link rel="stylesheet" href="<?= e(asset('css/layout.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset('css/site.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset('css/assessment.css')) ?>">
+<link rel="stylesheet" href="<?= e(asset('css/modules.css')) ?>">
 <link rel="stylesheet" href="<?= e(asset('css/responsive.css')) ?>">
 
 <script>
@@ -78,6 +79,7 @@ $path = Request::path();
 
 <script src="<?= e(asset('js/core.js')) ?>"></script>
 <script src="<?= e(asset('js/list.js')) ?>"></script>
+<script src="<?= e(asset('js/crud.js')) ?>"></script>
 <script src="<?= e(asset('js/assessment.js')) ?>"></script>
 <?= $extraScripts ?? '' ?>
 </body>

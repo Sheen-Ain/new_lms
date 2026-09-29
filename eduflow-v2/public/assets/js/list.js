@@ -27,7 +27,9 @@
     this.tbody = typeof this.options.tbody === 'string' ? document.querySelector(this.options.tbody) : this.options.tbody;
     this.pagination = typeof this.options.pagination === 'string' ? document.querySelector(this.options.pagination) : this.options.pagination;
     this.bind();
-    this.load();
+    if (this.options.autoLoad !== false) {
+      this.load();
+    }
   }
 
   List.prototype.bind = function () {
@@ -62,7 +64,8 @@
       if (reset) {
         reset.addEventListener('click', function () {
           self.form.reset();
-          self.state = { page: 1, per_page: self.state.per_page, search: '', filters: {} };
+          var perPage = self.form.querySelector('[name="per_page"]');
+          self.state = { page: 1, per_page: Number(perPage && perPage.value) || self.options.perPage || 10, search: '', filters: {} };
           self.load();
         });
       }
@@ -101,6 +104,9 @@
     var filters = {};
     this.form.querySelectorAll('[name]').forEach(function (field) {
       if (field.name === 'search' || field.type === 'submit') return;
+      if (field.name === 'per_page' && field.value !== '') {
+        self.state.per_page = Number(field.value) || self.state.per_page;
+      }
       if (field.type === 'checkbox') {
         if (field.checked) filters[field.name] = field.value || '1';
       } else if (field.value !== '') {

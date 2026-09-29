@@ -1,0 +1,27 @@
+[2026-09-29 10:10:52] ERROR: SQL prepare failed: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'current_role, created_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 'inactiv...' at line 2 | INSERT INTO users (full_name, email, password, cnic, user_id_number, gender, phone,
+                                status, is_verified, current_role, created_at)
+             VALUES (?, ?, ?, ?, ?, ?, ?, 'inactive', 0, 'student', NOW()) | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fregister | uid=-
+[2026-09-29 10:10:52] EXCEPTION: Database error while preparing statement. @ C:\xampp\htdocs\edu_flow\eduflow-v2\app\Core\Database.php:65 | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fregister | uid=-
+[2026-09-29 10:14:58] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:14:59] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:15:07] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:15:07] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:18:20] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:18:20] ERROR: Controller not found: Admin\Portal | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:33:18] ERROR: View not found: admin/dashboard | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin | uid=2
+[2026-09-29 10:33:23] ERROR: View not found: admin/courses | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fcourses | uid=2
+[2026-09-29 10:33:24] ERROR: View not found: admin/batches | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fbatches | uid=2
+[2026-09-29 10:33:25] ERROR: View not found: admin/topics | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Ftopics | uid=2
+[2026-09-29 10:33:26] ERROR: View not found: admin/assignments | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fassignments | uid=2
+[2026-09-29 10:33:42] ERROR: View not found: portal/profile | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fprofile | uid=2
+[2026-09-29 10:33:50] ERROR: View not found: admin/system | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fsystem | uid=2
+[2026-09-29 10:33:57] ERROR: View not found: admin/users | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fusers | uid=2
+[2026-09-29 10:34:01] ERROR: View not found: admin/live | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Flive | uid=2
+[2026-09-29 10:34:07] ERROR: View not found: admin/activity-logs | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Factivity-logs | uid=2
+[2026-09-29 10:34:40] ERROR: View not found: admin/courses | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fadmin%2Fcourses | uid=2
+[2026-09-29 11:09:59] ERROR: View not found: teacher/announcements | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fteacher%2Fannouncements | uid=2
+[2026-09-29 11:10:01] ERROR: View not found: teacher/live | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fteacher%2Flive | uid=2
+[2026-09-29 11:10:02] ERROR: View not found: teacher/feedback | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fteacher%2Ffeedback | uid=2
+[2026-09-29 11:10:04] ERROR: View not found: teacher/batches | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fteacher%2Fbatches | uid=2
+[2026-09-29 11:10:08] ERROR: View not found: teacher/batches | ip=127.0.0.1 | uri=/edu_flow/eduflow-v2/public/index.php?r=%2Fteacher%2Fbatches | uid=2

@@ -1,0 +1,253 @@
+/* ============================================================
+   EduFlow V2 — modules.css
+   Components used by the application screens: list toolbars,
+   inline filters, bulk action bar, detail lists, room shell.
+   Loaded after components.css so it can extend base styles.
+   ============================================================ */
+
+/* ── Resource list toolbar ────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md) var(--r-md) 0 0;
+  border-bottom: 0;
+}
+.filter-bar .btn { flex: none; }
+.filter-spacer { flex: 1 1 auto; }
+.resource-count { font-variant-numeric: tabular-nums; }
+
+.field-inline {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  padding: 0 4px 0 10px;
+  height: 34px;
+}
+.field-inline-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--ink-500);
+  white-space: nowrap;
+}
+.field-inline .select,
+.field-inline .input {
+  border: 0;
+  background: transparent;
+  height: 32px;
+  padding: 0 6px 0 0;
+  font-size: 0.8125rem;
+  min-width: 120px;
+}
+.field-inline .select:focus,
+.field-inline .input:focus { box-shadow: none; }
+
+.resource .panel { border-radius: 0 0 var(--r-md) var(--r-md); }
+.resource .table-wrap { border-radius: 0; }
+
+/* ── Bulk action bar ──────────────────────────────────────── */
+.bulk-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  background: var(--brand-50);
+  border: 1px solid var(--brand-100);
+  border-bottom: 0;
+  color: var(--brand-700);
+}
+
+/* ── Detail list (read-only modal panels) ─────────────────── */
+.detail-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  margin: 0;
+}
+.detail-row { background: var(--surface); padding: 11px 14px; }
+.detail-row dt {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-500);
+  margin-bottom: 3px;
+}
+.detail-row dd {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--ink-800);
+  overflow-wrap: anywhere;
+}
+.detail-row.span-2 { grid-column: 1 / -1; }
+
+.static-value {
+  padding: 9px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  font-size: 0.8125rem;
+  color: var(--ink-600);
+}
+
+/* ── Dashboard metric strip ───────────────────────────────── */
+.metric-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin-bottom: 22px;
+}
+.metric {
+  background: var(--surface);
+  padding: 16px 18px;
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+}
+.metric .mark {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--r-sm);
+  display: grid;
+  place-items: center;
+  background: var(--surface-3);
+  color: var(--ink-600);
+  flex: none;
+}
+.metric.is-brand .mark { background: var(--brand-100); color: var(--brand-700); }
+.metric.is-success .mark { background: var(--success-100); color: var(--success-700); }
+.metric.is-warning .mark { background: var(--warning-100); color: var(--warning-700); }
+.metric.is-danger .mark { background: var(--danger-100); color: var(--danger-700); }
+.metric.is-info .mark { background: var(--info-100); color: var(--info-700); }
+.metric .value {
+  font-size: 1.375rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--ink-900);
+  font-variant-numeric: tabular-nums;
+}
+.metric .label { font-size: 0.75rem; color: var(--ink-500); margin-top: 2px; }
+.metric .foot { font-size: 0.6875rem; color: var(--ink-400); margin-top: 6px; }
+
+/* ── Section scaffolding inside a page ────────────────────── */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: var(--gutter);
+  align-items: start;
+}
+.panel-note {
+  font-size: 0.8125rem;
+  color: var(--ink-500);
+  padding: 14px 16px;
+  border-top: 1px solid var(--line);
+}
+
+/* ── Choice list (feedback categories, question options) ──── */
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: var(--ink-700);
+}
+.choice:hover { border-color: var(--brand-300); }
+.choice input { margin-top: 2px; }
+.choice.is-checked { border-color: var(--brand-600); background: var(--brand-50); }
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 8px;
+}
+
+/* ── Live room shell ──────────────────────────────────────── */
+.is-room .content { padding: 0; max-width: none; }
+.room {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--topbar-h));
+  background: var(--ink-900);
+}
+.room-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+.room-head h1 { font-size: 0.9375rem; }
+.room-head .sub { font-size: 0.75rem; color: var(--ink-500); }
+.room-stage { flex: 1 1 auto; position: relative; background: #0b1320; }
+.room-stage iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.room-wait {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #cbd5e3;
+  padding: 40px 20px;
+}
+.room-wait .icon { color: #6b7a92; }
+.room-wait h2 { color: #fff; font-size: 1.125rem; margin: 14px 0 6px; }
+.room-wait p { font-size: 0.875rem; max-width: 46ch; margin: 0 auto; }
+.room-foot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 16px;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  font-size: 0.75rem;
+  color: var(--ink-500);
+}
+
+/* ── Small helpers used across modules ────────────────────── */
+.row-actions { display: flex; gap: 2px; justify-content: flex-end; }
+.toolbar-actions { display: flex; align-items: center; gap: 8px; }
+.mini-list { display: flex; flex-direction: column; }
+.mini-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.mini-item:last-child { border-bottom: 0; }
+.mini-item .main { flex: 1 1 auto; min-width: 0; }
+.mini-item .title { font-size: 0.875rem; font-weight: 500; color: var(--ink-800); }
+.mini-item .meta { font-size: 0.75rem; color: var(--ink-500); margin-top: 1px; }
+
+/* ── Responsive: stack the two-column screens ─────────────── */
+@media (max-width: 1080px) {
+  .split { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 720px) {
+  .detail-list { grid-template-columns: minmax(0, 1fr); }
+  .field-inline { width: 100%; }
+  .field-inline .select,
+  .field-inline .input { flex: 1 1 auto; }
+  .filter-bar { border-radius: var(--r-md) var(--r-md) 0 0; }
+}

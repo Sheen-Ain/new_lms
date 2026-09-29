@@ -1,0 +1,4 @@
+[29-Sep-2026 11:12:59 Asia/Karachi] PHP Fatal error:  Uncaught RuntimeException: Missing view for system in Standard input code:21
+Stack trace:
+#0 {main}
+  thrown in Standard input code on line 21

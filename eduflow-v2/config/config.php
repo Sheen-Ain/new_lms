@@ -59,6 +59,15 @@ define('CSRF_HEADER', 'HTTP_X_CSRF_TOKEN');
 define('LOGIN_MAX_ATTEMPTS', 8);
 define('LOGIN_WINDOW', 600);
 
+/**
+ * Application salt. Used to derive anonymous feedback tokens so a student
+ * can only submit once without the entry being traceable back to them.
+ * Override it in config/config.local.php on each deployment.
+ */
+if (!defined('APP_KEY')) {
+    define('APP_KEY', 'eduflow-v2-local-development-key');
+}
+
 /* ───────────────────────────────────────────────────────────────
    PAGINATION
    ─────────────────────────────────────────────────────────────── */

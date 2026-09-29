@@ -8,6 +8,11 @@
 
   var EF = window.EF || {};
   EF.config = EF.config || { base: '', csrf: '', role: '', userId: 0, urls: {} };
+  EF.config.base = EF.config.base || EF.base || '';
+  EF.config.csrf = EF.config.csrf || EF.csrf || '';
+  EF.config.role = EF.config.role || EF.role || '';
+  EF.config.userId = EF.config.userId || EF.userId || 0;
+  EF.config.urls = EF.config.urls || EF.urls || {};
 
   /* ── Utilities ───────────────────────────────────────────── */
   var Util = {

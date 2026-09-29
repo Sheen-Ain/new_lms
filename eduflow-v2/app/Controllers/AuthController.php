@@ -144,7 +144,7 @@ class AuthController extends Controller
 
         $userId = Database::insert(
             "INSERT INTO users (full_name, email, password, cnic, user_id_number, gender, phone,
-                                status, is_verified, current_role, created_at)
+                                status, is_verified, `current_role`, created_at)
              VALUES (?, ?, ?, ?, ?, ?, ?, 'inactive', 0, 'student', NOW())",
             [
                 $data['full_name'],
